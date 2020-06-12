@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    android:orientation="vertical"
+    tools:context=".Login.GatherUserDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbarSize="0.1dp"
+        android:scrollbarStyle="insideInset">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_black"
+                android:layout_gravity="center"
+                android:text="Circle"
+                android:layout_marginTop="30dp"
+                android:textColor="#2196F3"
+                android:textSize="50dp"
+                />
+
+            <TextView
+                android:id="@+id/beneathTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_black"
+                android:text="The Friendly Neighbourhood App"
+                android:textColor="#D1D1D1"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile picture"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="#B3B1B1"
+                    android:textSize="11dp">
+                </TextView>
+
+                <RelativeLayout
+                    android:id="@+id/imagePreview"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/profile_image"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:background="@drawable/ic_account_circle_black_24dp"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="#FF000000"/>
+
+                    <Button
+                        android:id="@+id/profilePicSetterImage"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="45dp"
+                        android:background="@drawable/edit_project_button_background"
+                        android:foreground="@drawable/edit_drawable"
+                        android:foregroundGravity="center"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+          <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="First Name"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="#B3B1B1"
+                    android:layout_marginTop="20dp"
+                    android:textSize="11dp">
+                </TextView>
+                <EditText
+                    android:id="@+id/fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ACA9A9"
+                    android:textColorHint="#ACA9A9"
+                    android:imeOptions="actionDone"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="13dp"
+                    android:ems="10"
+                    android:nextFocusDown="@id/lname"
+                    android:digits="@string/digits"
+                    android:textColor="@color/black"
+                        android:inputType="textPersonName" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last Name"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="#B3B1B1"
+                    android:layout_marginTop="20dp"
+                    android:textSize="11dp">
+                </TextView>
+                <EditText
+                    android:id="@+id/lname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ACA9A9"
+                    android:textColorHint="#ACA9A9"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="13dp"
+                    android:ems="10"
+                    android:nextFocusDown="@id/registerButton"
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionDone"
+                    android:digits="@string/digits"
+                    android:textColor="@color/black"/>
+
+              <Button
+                  android:id="@+id/registerButton"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="40dp"
+                  android:background="@drawable/gradient_button"
+                  android:drawableEnd="@drawable/right_forward_arrow"
+                  android:fontFamily="@font/roboto_black"
+                  android:gravity="start|center"
+                  android:paddingLeft="19dp"
+                  android:paddingRight="19dp"
+                  android:text="Continue To Set Interest Tags"
+                  android:textAllCaps="false"
+                  android:textColor="#FFFFFFFF"
+                  android:textSize="15dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".Login.EntryPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_weight="99">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/entry_page_people_images"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Circle"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="22dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your location will be used to show most relevant circles around you. Choose 'Agree and continue' to grant location access."
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#40000000"
+            android:gravity="center_horizontal">
+        </TextView>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/agreeandContinueEntryPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_weight="1"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/gradient_button"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Agree and continue"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp" />
+
+</LinearLayout>
